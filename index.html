@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fix Pro Home Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #f4f4f4;
+            padding: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #0073e6;
+            color: white;
+        }
+        .qr-code {
+            text-align: center;
+            margin: 20px 0;
+        }
+        iframe {
+            border: 0;
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fix Pro Home Solution</h1>
+    <p>Reliable, affordable, and high-quality work in Chicago</p>
+</header>
+
+<nav>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <ul>
+        <li>Furniture Assembly</li>
+        <li>Plumbing Repairs</li>
+        <li>Electrical Work</li>
+        <li>Painting and Decorating</li>
+        <li>General Repairs and Maintenance</li>
+    </ul>
+</section>
+
+<section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="example1.jpg" alt="Before and After">
+        <img src="example2.jpg" alt="Completed Work">
+    </div>
+</section>
+
+<section id="reviews">
+    <h2>Client Reviews</h2>
+    <blockquote>
+        "Oleh did an amazing job assembling my furniture. Highly recommended!" - Sarah J.
+    </blockquote>
+    <blockquote>
+        "Quick and efficient service. My go-to handyman!" - Michael B.
+    </blockquote>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Phone: (123) 456-7890</p>
+    <p>Email: handyman@example.com</p>
+    <p>Location: Chicago, IL</p>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" required></textarea><br><br>
+
+        <button type="submit">Send</button>
+    </form>
+    <div class="qr-code">
+        <h3>Scan to Visit Our Website</h3>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://fixprohomesolution.com&size=150x150" alt="QR Code">
+    </div>
+    <div>
+        <h3>Find Us on the Map</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d-122.41941568468158!3d37.77492977975917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064e073e3e3%3A0xbac77e2e7f6218e!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1643056071514!5m2!1sen!2s"
+            allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Fix Pro Home Solution. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
