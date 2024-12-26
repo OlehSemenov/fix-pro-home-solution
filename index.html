@@ -3,60 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reliable, affordable, and high-quality handyman services in Chicago. Contact us for furniture assembly, plumbing repairs, and more.">
     <title>Fix Pro Home Solution</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
         }
         header {
             background-color: #0073e6;
             color: white;
-            padding: 10px 20px;
             text-align: center;
+            padding: 40px 20px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
         }
         nav {
             display: flex;
             justify-content: center;
-            background: #f4f4f4;
+            background-color: #f4f4f4;
             padding: 10px 0;
         }
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #333;
+            color: #0073e6;
             font-weight: bold;
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .hero h2 {
+            font-size: 2rem;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            margin: 20px 0;
+        }
+        .hero button {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .hero button:hover {
+            background-color: #e55b00;
         }
         section {
             padding: 20px;
         }
-        .gallery img {
-            width: 100%;
-            max-width: 300px;
-            margin: 10px;
-            border: 2px solid #ddd;
-            border-radius: 5px;
-            cursor: pointer;
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
         }
-        .gallery img:hover {
-            transform: scale(1.1);
-            transition: transform 0.3s;
+        .service {
+            background: white;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .service img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .service h3 {
+            margin: 10px 0;
+            color: #0073e6;
         }
         footer {
-            text-align: center;
-            padding: 10px;
             background-color: #0073e6;
             color: white;
+            text-align: center;
+            padding: 20px;
         }
-        .qr-code {
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+        .contact {
             text-align: center;
             margin: 20px 0;
         }
-        iframe {
-            border: 0;
-            width: 100%;
-            height: 300px;
+        .contact a {
+            color: #0073e6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                padding: 40px 20px;
+            }
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
@@ -64,73 +127,71 @@
 
 <header>
     <h1>Fix Pro Home Solution</h1>
-    <p>Reliable, affordable, and high-quality work in Chicago</p>
+    <p>Reliable, Affordable Handyman Services in Chicago</p>
 </header>
+
+<div class="hero">
+    <h2>Professional Handyman Services</h2>
+    <p>From furniture assembly to plumbing repairs, we've got you covered!</p>
+    <button onclick="location.href='#contact'">Contact Us Now</button>
+</div>
 
 <nav>
     <a href="#services">Services</a>
-    <a href="#gallery">Gallery</a>
     <a href="#reviews">Reviews</a>
     <a href="#contact">Contact</a>
 </nav>
 
 <section id="services">
     <h2>Our Services</h2>
-    <ul>
-        <li>Furniture Assembly</li>
-        <li>Plumbing Repairs</li>
-        <li>Electrical Work</li>
-        <li>Painting and Decorating</li>
-        <li>General Repairs and Maintenance</li>
-    </ul>
-</section>
-
-<section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-        <img src="example1.jpg" alt="Before and After">
-        <img src="example2.jpg" alt="Completed Work">
+    <div class="services">
+        <div class="service">
+            <img src="furniture.jpg" alt="Furniture Assembly">
+            <h3>Furniture Assembly</h3>
+            <p>Quick and reliable furniture assembly services for your home or office.</p>
+        </div>
+        <div class="service">
+            <img src="plumbing.jpg" alt="Plumbing Repairs">
+            <h3>Plumbing Repairs</h3>
+            <p>Expert plumbing repair solutions for leaks, pipes, and more.</p>
+        </div>
+        <div class="service">
+            <img src="painting.jpg" alt="Painting and Decorating">
+            <h3>Painting and Decorating</h3>
+            <p>Professional painting and decorating to enhance your space.</p>
+        </div>
     </div>
 </section>
 
 <section id="reviews">
     <h2>Client Reviews</h2>
-    <blockquote>
-        "Oleh did an amazing job assembling my furniture. Highly recommended!" - Sarah J.
-    </blockquote>
-    <blockquote>
-        "Quick and efficient service. My go-to handyman!" - Michael B.
-    </blockquote>
+    <div class="reviews">
+        <div class="review">
+            <p>"Oleh did an amazing job assembling my furniture. Highly recommended!"</p>
+            <p>- Sarah J.</p>
+        </div>
+        <div class="review">
+            <p>"Quick and efficient service. My go-to handyman!"</p>
+            <p>- Michael B.</p>
+        </div>
+        <div class="review">
+            <p>"See more reviews on our <a href='https://www.thumbtack.com/il/chicago/handyman/oleh/service/532202063012429833' target='_blank'>Thumbtack profile</a>!"</p>
+        </div>
+    </div>
 </section>
 
 <section id="contact">
     <h2>Contact Us</h2>
-    <p>Phone: (123) 456-7890</p>
-    <p>Email: handyman@example.com</p>
-    <p>Location: Chicago, IL</p>
-    <form>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
-
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" required></textarea><br><br>
-
-        <button type="submit">Send</button>
-    </form>
-    <div class="qr-code">
-        <h3>Scan to Visit Our Website</h3>
-        <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://fixprohomesolution.com&size=150x150" alt="QR Code">
-    </div>
-    <div>
-        <h3>Find Us on the Map</h3>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d-122.41941568468158!3d37.77492977975917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064e073e3e3%3A0xbac77e2e7f6218e!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1643056071514!5m2!1sen!2s"
-            allowfullscreen="" loading="lazy"></iframe>
+    <div class="contact">
+        <p>Phone: <a href="tel:1234567890">(123) 456-7890</a></p>
+        <p>Email: <a href="mailto:handyman@fixprosolution.com">handyman@fixprosolution.com</a></p>
+        <p>Location: Chicago, IL</p>
     </div>
 </section>
 
 <footer>
     <p>&copy; 2024 Fix Pro Home Solution. All Rights Reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
 </footer>
 
 </body>
