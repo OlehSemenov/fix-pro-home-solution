@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Reliable, affordable, and high-quality handyman services in Chicago. Contact us for furniture assembly, plumbing repairs, and more.">
+    <meta name="description" content="Reliable handyman services in Chicago. Contact us for furniture assembly, plumbing, electrical work, and more.">
     <title>Fix Pro Home Solution</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f0f8ff;
             color: #333;
-            background-color: #f9f9f9;
         }
         header {
             background-color: #0073e6;
             color: white;
+            padding: 20px;
             text-align: center;
-            padding: 40px 20px;
         }
         header h1 {
             font-size: 2.5rem;
@@ -37,21 +37,24 @@
             color: #0073e6;
             font-weight: bold;
         }
+        nav a:hover {
+            text-decoration: underline;
+        }
         .hero {
-            background: url('hero-image.jpg') no-repeat center center/cover;
-            color: white;
+            background-color: #e6f7ff;
             text-align: center;
-            padding: 80px 20px;
+            padding: 50px 20px;
         }
         .hero h2 {
             font-size: 2rem;
+            margin: 0;
         }
         .hero p {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             margin: 20px 0;
         }
         .hero button {
-            background-color: #ff6600;
+            background-color: #0073e6;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -60,10 +63,10 @@
             cursor: pointer;
         }
         .hero button:hover {
-            background-color: #e55b00;
+            background-color: #005bb5;
         }
         section {
-            padding: 20px;
+            padding: 40px 20px;
         }
         .services {
             display: flex;
@@ -73,7 +76,7 @@
         }
         .service {
             background: white;
-            padding: 15px;
+            padding: 20px;
             border: 1px solid #ddd;
             border-radius: 8px;
             width: 300px;
@@ -87,35 +90,30 @@
             border-radius: 5px;
         }
         .service h3 {
-            margin: 10px 0;
+            margin: 15px 0;
             color: #0073e6;
         }
-        footer {
-            background-color: #0073e6;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        footer a {
-            color: #ffcc00;
-            text-decoration: none;
-        }
         .contact {
+            background-color: #f4f4f4;
+            padding: 20px;
             text-align: center;
-            margin: 20px 0;
         }
         .contact a {
             color: #0073e6;
             text-decoration: none;
             font-weight: bold;
         }
+        footer {
+            background-color: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
         @media (max-width: 768px) {
-            .hero {
-                padding: 40px 20px;
-            }
-            .hero h2 {
-                font-size: 1.8rem;
-            }
             .services {
                 flex-direction: column;
                 align-items: center;
@@ -127,20 +125,20 @@
 
 <header>
     <h1>Fix Pro Home Solution</h1>
-    <p>Reliable, Affordable Handyman Services in Chicago</p>
+    <p>Reliable Handyman Services in Chicago</p>
 </header>
-
-<div class="hero">
-    <h2>Professional Handyman Services</h2>
-    <p>From furniture assembly to plumbing repairs, we've got you covered!</p>
-    <button onclick="location.href='#contact'">Contact Us Now</button>
-</div>
 
 <nav>
     <a href="#services">Services</a>
-    <a href="#reviews">Reviews</a>
+    <a href="#about">About</a>
     <a href="#contact">Contact</a>
 </nav>
+
+<div class="hero">
+    <h2>Your Trusted Handyman in Chicago</h2>
+    <p>From furniture assembly to plumbing repairs, we've got you covered!</p>
+    <button onclick="location.href='#contact'">Get in Touch</button>
+</div>
 
 <section id="services">
     <h2>Our Services</h2>
@@ -148,50 +146,37 @@
         <div class="service">
             <img src="furniture.jpg" alt="Furniture Assembly">
             <h3>Furniture Assembly</h3>
-            <p>Quick and reliable furniture assembly services for your home or office.</p>
+            <p>Professional and quick furniture assembly for homes and offices.</p>
         </div>
         <div class="service">
             <img src="plumbing.jpg" alt="Plumbing Repairs">
             <h3>Plumbing Repairs</h3>
-            <p>Expert plumbing repair solutions for leaks, pipes, and more.</p>
+            <p>Reliable plumbing services to fix leaks, clogs, and more.</p>
         </div>
         <div class="service">
-            <img src="painting.jpg" alt="Painting and Decorating">
-            <h3>Painting and Decorating</h3>
-            <p>Professional painting and decorating to enhance your space.</p>
+            <img src="electrical.jpg" alt="Electrical Work">
+            <h3>Electrical Work</h3>
+            <p>Safe and efficient electrical repairs and installations.</p>
         </div>
     </div>
 </section>
 
-<section id="reviews">
-    <h2>Client Reviews</h2>
-    <div class="reviews">
-        <div class="review">
-            <p>"Oleh did an amazing job assembling my furniture. Highly recommended!"</p>
-            <p>- Sarah J.</p>
-        </div>
-        <div class="review">
-            <p>"Quick and efficient service. My go-to handyman!"</p>
-            <p>- Michael B.</p>
-        </div>
-        <div class="review">
-            <p>"See more reviews on our <a href='https://www.thumbtack.com/il/chicago/handyman/oleh/service/532202063012429833' target='_blank'>Thumbtack profile</a>!"</p>
-        </div>
-    </div>
+<section id="about">
+    <h2>About Us</h2>
+    <p>At Fix Pro Home Solution, we provide top-quality handyman services tailored to your needs. Our skilled team is committed to delivering reliable and affordable solutions for homes and businesses in Chicago.</p>
 </section>
 
 <section id="contact">
     <h2>Contact Us</h2>
     <div class="contact">
         <p>Phone: <a href="tel:1234567890">(123) 456-7890</a></p>
-        <p>Email: <a href="mailto:handyman@fixprosolution.com">handyman@fixprosolution.com</a></p>
+        <p>Email: <a href="mailto:contact@fixprohomesolution.com">contact@fixprohomesolution.com</a></p>
         <p>Location: Chicago, IL</p>
     </div>
 </section>
 
 <footer>
-    <p>&copy; 2024 Fix Pro Home Solution. All Rights Reserved.</p>
-    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    <p>&copy; 2024 Fix Pro Home Solution. All rights reserved.</p>
 </footer>
 
 </body>
